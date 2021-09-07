@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { HeaderPage } from "../styles/pageStyle"
+import { HeaderPage } from "../styles/pageStyle"  
 import logomarca from '../assets/logo.png'
 
 export function HeaderPages() {

@@ -9,10 +9,9 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <HeaderPages />
-      <FooterPage />
       <Component {...pageProps} />
       <GlobalStyle />
-      
+      <FooterPage />
     </ThemeProvider>
   )
 }

@@ -20,8 +20,9 @@ h1 {
 li {
 	padding: 1rem;
 }
-li:hover {
+li:hover, li:focus {
 	cursor: pointer;
+	color: ${props => props.theme.colors.primary};
 }
 `
 export const FooterPage = styled.div`
