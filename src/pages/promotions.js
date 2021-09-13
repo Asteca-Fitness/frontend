@@ -1,4 +1,5 @@
 import { PageContent } from "../styles/pageStyle";
+import { FormsHome } from "../styles/pageStyle";
 import Head from 'next/head'
 
 
@@ -8,7 +9,11 @@ export default function Promotion() {
              <Head>
                 <title>Promoções | Asteca Fitness</title>    
             </Head>
-        <h1>Promoções</h1>
+            <FormsHome>
+                <input type="text" value=""></input>
+                <button type="button">PESQUISAR</button>
+                <button type="button">CADASTRAR</button>
+            </FormsHome>            
         </PageContent>
     )
 }

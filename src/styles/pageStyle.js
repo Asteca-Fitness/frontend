@@ -20,7 +20,7 @@ h1 {
 li {
 	padding: 1rem;
 }
-li:hover, li:focus {
+li:hover{
 	cursor: pointer;
 	color: ${props => props.theme.colors.primary};
 }
@@ -34,7 +34,33 @@ display: flex;
 export const PageContent = styled.div`
 width: 100%;
 justify-content: center;
-display: grid;
 height: 1500px;
 margin-top: 10rem;
+
+`
+export const FormsHome = styled.div`
+
+input{
+	margin-left:6%;
+	text-align:center;
+	width:45%;
+	height: 77px;
+	font-size:20px;
+	font-weight:bold;
+
+}
+button{
+	margin-left:2%;
+	text-align:center;
+	width:17%;
+	height:70px;
+	background-color: ${props => props.theme.colors.primary};
+	color: white;
+	border-radius: 13px;
+	font-size:20px;
+	font-weight:bold;
+}
+button:hover{
+	cursor:pointer;
+}
 `

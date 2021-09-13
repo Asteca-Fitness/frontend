@@ -1,4 +1,5 @@
 import { PageContent } from "../styles/pageStyle";
+import { FormsHome } from "../styles/pageStyle";
 import Head from 'next/head'
 
 
@@ -8,7 +9,11 @@ export default function Workers() {
              <Head>
                 <title>Funcionários | Asteca Fitness</title>    
             </Head>
-        <h1>Funcionários</h1>
+            <FormsHome>
+                <input type="text" value="INFORME NOME DO(A) FUNCIONÁRIO (A)"></input>
+                <button type="button">PESQUISAR</button>
+                <button type="button">CADASTRAR</button>
+            </FormsHome>
         </PageContent>
     )
 }
