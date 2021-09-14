@@ -10,7 +10,7 @@ export default function Workers() {
                 <title>Funcionários | Asteca Fitness</title>    
             </Head>
             <FormsHome>
-                <input type="text" value="INFORME NOME DO(A) FUNCIONÁRIO (A)"></input>
+                <input type="text" placeholder="INFORME NOME DO(A) FUNCIONÁRIO (A)"></input>
                 <button type="button">PESQUISAR</button>
                 <button type="button">CADASTRAR</button>
             </FormsHome>

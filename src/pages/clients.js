@@ -11,7 +11,7 @@ export default function Clients() {
             </Head>
 
             <FormsHome>
-                <input type="text" value="INFORME NOME DO ALUNO (A)"></input>
+                <input type="text" placeholder="INFORME NOME DO ALUNO (A)"></input>
                 <button type="button">PESQUISAR</button>
                 <button type="button">MATRICULAR</button>
             </FormsHome>
