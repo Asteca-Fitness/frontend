@@ -11,9 +11,11 @@ export default function Clients() {
             </Head>
 
             <FormsHome>
-                <input type="text" placeholder="INFORME NOME DO ALUNO (A)"></input>
-                <button type="button">PESQUISAR</button>
-                <button type="button">MATRICULAR</button>
+                <form action="#">
+                <input type="text" placeholder="INFORME NOME DO ALUNO (A)" required></input>
+                <button type="submit">PESQUISAR</button>
+                <button type="submit">MATRICULAR</button>
+                </form>
             </FormsHome>
         </PageContent>
     )

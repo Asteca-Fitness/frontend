@@ -10,9 +10,11 @@ export default function Planos() {
                 <title>Planos | Asteca Fitness</title>    
             </Head>
             <FormsHome>
-                <input type="text" placeholder="INFORME O NOME DO PLANO"></input>
-                <button type="button">PESQUISAR</button>
-                <button type="button">CADASTRAR</button>
+                <form action="#">
+                <input type="text" placeholder="INFORME O NOME DO PLANO" required></input>
+                <button type="submit">PESQUISAR</button>
+                <button type="submit">CADASTRAR</button>
+                </form>
             </FormsHome>
         </PageContent>
     )

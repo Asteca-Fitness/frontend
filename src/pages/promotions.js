@@ -10,9 +10,11 @@ export default function Promotion() {
                 <title>Promoções | Asteca Fitness</title>    
             </Head>
             <FormsHome>
-                <input type="text" placeholder="INFORME NOME DA PROMOÇÃO"></input>
-                <button type="button">PESQUISAR</button>
-                <button type="button">CADASTRAR</button>
+                <form action="#">
+                <input type="text" placeholder="INFORME NOME DA PROMOÇÃO" required></input>
+                <button type="submit">PESQUISAR</button>
+                <button type="submit">CADASTRAR</button>
+                </form>
             </FormsHome>            
         </PageContent>
     )
