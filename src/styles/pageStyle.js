@@ -29,6 +29,9 @@ export const FooterPage = styled.div`
 bottom: 0;
 position: absolute;
 display: flex;
+max-width:1440;
+width:100%;
+background-color:${props => props.theme.colors.primary};;
 `
 
 export const PageContent = styled.div`
@@ -149,7 +152,47 @@ export const Login = styled.div`
 	}
 	button:hover{
 		cursor:pointer;
-		background-color:#A9A9A9;
+	
 
 	}
+`
+
+export const PainelPrincipal = styled.div`
+
+.section{
+	max-width:205px;;
+	max-height:273px;
+	height:auto;
+	padding:8% 5%;
+	background-color:silver;
+	text-align:center;
+	margin:0 auto;
+	
+
+}
+#codigo-painel{
+
+	display:block;
+	margin:35px auto;
+	width:30%;
+	height:auto;
+	padding:15px 0; 
+	text-align:center;
+	font-size:24px;
+	color:silver;
+	outline:0;
+}
+
+.button-painel{
+	display:block;
+	text-align:center;
+	width:17%;
+	height:70px;
+	background-color: ${props => props.theme.colors.primary};
+	color: white;
+	border-radius: 13px;
+	font-size:20px;
+	font-weight:bold;
+	margin:0 auto;
+}
 `

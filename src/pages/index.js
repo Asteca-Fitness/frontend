@@ -1,4 +1,5 @@
-import { HeaderPages } from "../components/HeaderPages";
+import { HeaderPages} from "../components/HeaderPages";
+import {Footer} from "../components/FooterPages";
 import { PageContent, Login} from "../styles/pageStyle";
 import Head from 'next/head'
 

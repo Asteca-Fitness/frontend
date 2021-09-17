@@ -7,5 +7,5 @@ export default class FormStats extends React.Components{
         }
     }
 
-    mudar
+
 }
