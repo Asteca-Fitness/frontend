@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 import React, {useState} from 'react'
-=======
-import { HeaderPages} from "../components/HeaderPages";
-import {Footer} from "../components/FooterPages";
-import { PageContent, Login} from "../styles/pageStyle";
->>>>>>> 401a03303fa3187b0469f7c22685bddbc16ba77a
 import Head from 'next/head'
 import Image from 'next/image'
 import { useUser } from '@auth0/nextjs-auth0'
@@ -15,8 +9,8 @@ import digital from '../assets/digital.png'
 import people from '../assets/people.jpg'
 
 
-import { PageContent } from '../styles/pageStyle';
-import { Button, FormsHome } from '../styles/contentStyle';
+import { PageContent } from '../styles/pageStyle'
+import { Button, FormsHome } from '../styles/contentStyle'
 
 export default function Painel()
 {
