@@ -35,11 +35,12 @@ background-color:${props => props.theme.colors.primary};;
 `
 
 export const PageContent = styled.div`
-width: 100%;
+width: 100vw;
 justify-content: center;
-max-height: 1500px;
 margin-top: 10rem;
 display: grid;
+<<<<<<< HEAD
+=======
 grid-template-columns:100%;
 font-family:'Open Sans', sans-serif;
 
@@ -195,4 +196,5 @@ export const PainelPrincipal = styled.div`
 	font-weight:bold;
 	margin:0 auto;
 }
+>>>>>>> 401a03303fa3187b0469f7c22685bddbc16ba77a
 `

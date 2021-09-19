@@ -13,7 +13,7 @@ export function HeaderPages() {
           <h1 style={{margin: '1rem 0 0 1rem'}}>Asteca Fitness</h1>
         </div>
         <ul>
-          <Link href="/panel"><li>Painel</li></Link>
+          <Link href="/"><li>Painel</li></Link>
           <Link href="/clients"><li>Alunos(as)</li></Link>
           <Link href="/workers"><li>Funcionários(as)</li></Link>
           <Link href="/plans"><li>Planos</li></Link>

@@ -1,17 +1,24 @@
 import { ThemeProvider } from 'styled-components'
+import { UserProvider } from '@auth0/nextjs-auth0';
+
 import theme from '../styles/theme'
 import GlobalStyle from '../styles/global'
 import { HeaderPages } from '../components/HeaderPages'
 import { FooterPage } from '../styles/pageStyle'
 
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
+  const { user } = pageProps;
   return (
     <ThemeProvider theme={theme}>
-      <HeaderPages />
-      <Component {...pageProps} />
-      <GlobalStyle />
-      <FooterPage />
+      <UserProvider user={user}>
+        <GlobalStyle />
+        <HeaderPages />
+        <FooterPage />
+        <Component {...pageProps} />        
+      </UserProvider>
     </ThemeProvider>
   )
 }
+
+export default MyApp
