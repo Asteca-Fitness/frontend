@@ -27,9 +27,9 @@ export default function Clients() {
                 <FormsHome>
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="N° de matrícula" required></input>
-                        <Button type="submit">PESQUISAR</Button>
+                        <Button type="submit">Pesquisar</Button>
                     </form>
-                    <Link href="#"><Button>MATRICULAR</Button></Link>
+                    <Link href="#"><Button>Matricular</Button></Link>
                 </FormsHome>
 
                 <List>
