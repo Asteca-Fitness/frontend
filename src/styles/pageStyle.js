@@ -28,10 +28,11 @@ li:hover, li:active, li:focus{
 export const FooterPage = styled.div`
 bottom: 0;
 position: absolute;
+justify-content: center;
 display: flex;
-max-width:1440px;
-width:100%;
-background-color:${props => props.theme.colors.primary};;
+padding: 1rem;
+width: 100%;
+background-color:${props => props.theme.colors.text};
 `
 
 export const PageContent = styled.div`

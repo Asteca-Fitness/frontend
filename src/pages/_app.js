@@ -4,7 +4,7 @@ import { UserProvider } from '@auth0/nextjs-auth0';
 import theme from '../styles/theme'
 import GlobalStyle from '../styles/global'
 import { HeaderPages } from '../components/HeaderPages'
-import { FooterPage } from '../styles/pageStyle'
+import { Footer } from '../components/FooterPages';
 
 
 const MyApp = ({ Component, pageProps }) => {
@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
       <UserProvider user={user}>
         <GlobalStyle />
         <HeaderPages />
-        <FooterPage />
+        <Footer />
         <Component {...pageProps} />        
       </UserProvider>
     </ThemeProvider>
