@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const FormsHome = styled.div`
 display: flex;
 justify-content: center;
-align-itens: center;
+
 form {
 	display: flex;
-	align-itens: center;
+	justify-content: center;
 	width: 100%;
 }
 
@@ -30,7 +30,7 @@ export const Button = styled.button `
     font-size: 20px;
     font-weight:bold;
 
-    : hover{
+    :hover{
 	cursor: pointer;
 	opacity: 80%;
 }
@@ -39,6 +39,8 @@ export const Button = styled.button `
 export const List = styled.div`
 margin-top: 5rem;
 background: ${props => props.theme.colors.tab};
+max-width: 80vw;
+margin: 5rem auto;
 
 
 div {
@@ -46,6 +48,5 @@ div {
 	justify-content: space-between;
 	padding: 2rem 1rem;
 	border-bottom: 1px solid;
-	
 }
 `

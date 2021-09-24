@@ -8,6 +8,11 @@ import { FormsHome, List, Button } from "../styles/contentStyle"
 import LoginPage from './login'
 
 export default function Promotion() {
+    const handleSubmit=(e)=> {
+        e.preventDefault();
+        alert("Evento formulário.");
+
+      }
     const { user } = useUser();
     if (user)
     {
@@ -18,24 +23,18 @@ export default function Promotion() {
                 </Head>
                 <FormsHome>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="N° de matrícula" required></input>
+                        <input type="text" placeholder="Inserir nome" required></input>
                         <Button type="submit">Pesquisar</Button>
+                        <Link href="formPromo"><Button>Cadastrar</Button></Link>
                     </form>
-                    <Link href="#"><Button>Cadastrar</Button></Link>
+                    
                 </FormsHome>
 
                 <List>
                     <div>
-                        <h3>Gabriel Pinheiro</h3>
-                        <h3>654123</h3>
-                        <h3>Administrador</h3>
-                    </div>
-                    <div>
-                        <h3>Gabriel Pinheiro</h3>
-                        <h3>654123</h3>
-                        <h3>Administrador</h3>
-                    </div>
-                    
+                        <h3>Indicação amigos</h3>
+                        <h3>Ativo</h3>
+                    </div>                    
                 </List>            
             </PageContent>
         )

@@ -8,7 +8,7 @@ import { Button } from "../styles/contentStyle"
 
 export default function LoginPage() {
   return (
-    <PageContent>
+    <PageContent style={{justifyContent: "center", display:"flex"}}>
        <Head>
           <title>Pagina de Login | Asteca Fitness</title>    
         </Head>

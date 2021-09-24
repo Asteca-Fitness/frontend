@@ -8,6 +8,11 @@ import { FormsHome, Button, List } from "../styles/contentStyle"
 import LoginPage from './login'
 
 export default function Workers() {
+    const handleSubmit=(e)=> {
+          e.preventDefault();
+          alert("Evento formulário.");
+        }
+        
     const { user } = useUser();
     if (user)
     {
@@ -20,8 +25,9 @@ export default function Workers() {
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="N° de matrícula" required></input>
                         <Button type="submit">Pesquisar</Button>
+                        <Link href="formFuncionario"><Button>Cadastrar</Button></Link>
                     </form>
-                    <Link href="#"><Button>Cadastrar</Button></Link>
+                    
                 </FormsHome>
 
                 <List>

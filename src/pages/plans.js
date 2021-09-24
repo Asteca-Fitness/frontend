@@ -24,22 +24,28 @@ export default function Planos() {
                 </Head>
                 <FormsHome>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="N° de matrícula" required></input>
+                        <input type="text" placeholder="Inserir nome" required></input>
                         <Button type="submit">Pesquisar</Button>
+                        <Link href="formPlano"><Button>Cadastrar</Button></Link>
                     </form>
-                    <Link href="#"><Button>Cadastrar</Button></Link>
+                    
                 </FormsHome>
 
                 <List>
                     <div>
-                        <h3>Gabriel Pinheiro</h3>
-                        <h3>654123</h3>
-                        <h3>Vencido</h3>
+                        <h3>Básico</h3>
+                        <p>Seg a Sex - 10h às 16h</p>
+                        <h3>R$40,00</h3>
                     </div>
                     <div>
-                        <h3>Gabriel Pinheiro</h3>
-                        <h3>654123</h3>
-                        <h3>Vencido</h3>
+                        <h3>Médio</h3>
+                        <p>Seg a Sáb - 08h às 18h</p>
+                        <h3>R$60,00</h3>
+                    </div>
+                    <div>
+                        <h3>Ultra</h3>
+                        <p>Todos os dias - 06h às 23h</p>
+                        <h3>R$120,00</h3>
                     </div>
                     
                 </List> 
